@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+body { background: linear-gradient(to bottom, #009b41 0%, #78ce00 15%, #fcff00 40%, #ffb300 70%, #ff5911 100%) fixed; color: #000000; font-family: "Roboto Slab", serif; scroll-behavior: smooth; }
+
+.header-padding { margin-bottom: 45px; }
+
+.leaf-box { position: absolute; z-index: 10; }
+
+.leaf-box-1 { width: 20%; left: 50px; top: 700px; }
+
+.leaf-box-2 { width: 25%; right: 50px; top: 700px; }
+
+.leaf-box-3 { width: 20%; right: 120px; top: 2000px; }
+
+.music-container { width: 1024px; margin: auto; padding: 20px 0 100px 0; text-align: center; background-color: #ff5911; background-image: url("/assets/img/noise-light.png"); }
+
+.music-container-discography { display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto; gap: 50px; width: 80%; margin: auto; }
+
+.music-discography-item { background-color: #009b41; background-image: url("/assets/img/noise-light.png"); padding: 10px; z-index: 20; }
+
+.music-discography-images { width: 100%; position: relative; z-index: 20; }
+
+.music-leaf1-box { width: 14%; position: absolute; left: 140px; top: 500px; }
+
+.music-leaf2-box { width: 20%; position: absolute; right: 100px; top: 1000px; }
+
+.music-leaf3-box { width: 25%; position: absolute; left: 70px; top: 2000px; }
+
+.music-leaf4-box { width: 14%; position: absolute; top: 1900px; right: 100px; }
+
+.music-leaf1, .music-leaf2, .music-leaf3, .music-leaf4 { width: 100%; }
+
+.music-leaf1 { transform: rotate(-30deg); }
+
+.music-leaf2 { transform: rotate(-25deg); }
+
+.music-leaf3 { transform: rotate(70deg); }
+
+.music-leaf4 { transform: rotate(20deg); }
+
+.store-container { width: 1024px; margin: auto; padding: 20px 0 100px 0; text-align: center; background-color: #ffb300; background-image: url("/assets/img/noise-light.png"); }
+
+.store-item { background-color: #ff5911; background-image: url("/assets/img/noise-light.png"); padding: 10px; z-index: 20; }
+
+/********** SLIDER **********/
+.slider { width: 100%; margin: 0px auto 30px auto; }
+
+.slide-viewer { position: relative; /* needed for IE7 */ overflow: hidden; height: 430px; }
+
+.slide-group { width: 100%; height: 100%; position: relative; }
+
+.slide { width: 100%; height: 100%; display: none; position: absolute; }
+
+.slide:first-child { display: block; }
+
+/********** BUTTONS **********/
+.slide-buttons { text-align: center; }
+
+.slide-btn { border: none; background: none; color: #000; font-size: 200%; line-height: 0.5em; }
+
+.slide-btn.active, .slide-btn:hover { color: #ed8e6c; cursor: pointer; }
+
+.slide-image { width: 80%; }
+
+.slide-image-1 { position: relative; top: -60px; }
+
+.slide-image-2 { position: relative; top: -70px; }
+
+.slide-image-4 { position: relative; top: -100px; }
+
+/************ Store-box-hover ************/
+.store-item { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); border-radius: 5px; -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.store-item::after { box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); opacity: 0; -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+
+.store-item:hover { -webkit-transform: scale(1.15, 1.15); transform: scale(1.15, 1.15); }
+
+.store-item:hover::after { opacity: 1; }
+
+.about-container { width: 1024px; margin: auto; padding: 100px 0; text-align: center; background-image: url("/assets/img/noise-light.png"); background-color: #fcff00; display: flex; flex-direction: column; align-items: center; }
+
+.about-container p { width: 75%; text-align: center; font-size: 17.5px; line-height: 2; z-index: 20; color: red; text-shadow: 1px 1px black; }
+
+.about-container i { font-size: 12.5px; margin-top: 10px; }
+
+.img-container { position: absolute; opacity: 0.85; width: 900px; }
+
+.history-img { width: 75%; height: 400px; opacity: 0.85; border-radius: 20px; background-size: cover; }
+
+.img-1 { background-image: url(/assets/img/history/bob-young.jpg); background-position: top; }
+
+.img-2 { background-image: url(/assets/img/history/tosh-rita-bob.png); background-position: top; }
+
+.img-3 { background-image: url(/assets/img/history/bob-rita.jpg); background-position: center; }
+
+.img-4 { background-image: url(/assets/img/history/bob.png); background-position: center; }
+
+.img-5 { background-image: url(/assets/img/history/bob-1981-crop.png); background-position: center; background-size: contain; background-repeat: no-repeat; background-color: orange; }
+
+.leaf-box { position: absolute; z-index: 10; }
+
+.leaf-box-1 { width: 20%; left: 50px; top: 700px; }
+
+.leaf-box-2 { width: 25%; right: 50px; top: 700px; }
+
+.leaf-box-3 { width: 20%; right: 120px; top: 2000px; }
+
+.leaf-box-4 { width: 25%; left: 50px; top: 1400px; }
+
+.leaf-box-5 { width: 20%; left: 50px; top: 2400px; }
+
+.leaf-box-6 { width: 25%; right: 50px; top: 3000px; }
+
+.leaf-box-7 { width: 20%; right: 100px; top: 3600px; }
+
+.leaf-box-8 { width: 25%; left: 50px; top: 4000px; }
+
+.leaf { width: 100%; }
+
+.leaf-3 { transform: rotate(310deg); }
+
+.leaf-4 { transform: rotate(180deg); }
+
+.leaf-6 { transform: rotate(320deg); }
+
+.leaf-7 { transform: rotate(210deg); }
+
+.leaf-8 { transform: rotate(160deg); }
+
+.bg-image { display: flex; margin: auto; background-image: url("/assets/img/BM_index.png"); background-repeat: no-repeat; height: 520px; width: 1024px; z-index: 2; }
+
+.cloud-big-box { position: absolute; background-image: url("/assets/img/BM_cloud_big.png"); background-repeat: no-repeat; height: 520px; width: 510px; top: 20%; right: 80%; z-index: -10; }
+
+.cloud-small-box { position: absolute; background-image: url("/assets/img/BM_cloud_small.png"); background-repeat: no-repeat; height: 100px; width: 150px; top: 40%; right: 10%; z-index: 1; }
+
+nav { display: flex; margin: auto; width: 1024px; margin-top: -3.8%; }
+
+a { position: relative; text-decoration: none; color: black; }
+
+ul { font-family: "Roboto", sans-serif; font-weight: 500; font-size: 1.2em; text-transform: uppercase; letter-spacing: 1px; display: flex; width: 100%; list-style: none; justify-content: flex-start; margin: 0; padding: 0; }
+ul li { margin: 0% 0.5% 0% 0%; width: 110px; padding: 2% 2% 2% 2%; text-align: center; }
+
+.bg-darkGreen { background-color: #009b41; background-image: url("/assets/img/noise-light.png"); }
+
+a:before { content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: #000; visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }
+
+.bg-green { background-color: #78ce00; background-image: url("/assets/img/noise-light.png"); }
+
+.bg-yellowGreen { background-color: #fcff00; background-image: url("/assets/img/noise-light.png"); }
+
+.bg-orange { background-color: #ffb300; background-image: url("/assets/img/noise-light.png"); }
+
+.bg-darkOrange { background-color: #ff5911; background-image: url("/assets/img/noise-light.png"); }
+
+a:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1); }
+
+footer { display: flex; /* background: linear-gradient(to bottom, $green 0%, $darkGreen 100%); */ width: 600px; margin: auto; padding: 2% 0% 2% 0%; }
+
+.item { display: flex; flex-direction: column; flex-basis: 100%; flex: 1; text-align: center; z-index: 30; }
+
+.footer-list { font-weight: 400; display: inline-block; }
+.footer-list li { text-align: center; padding: 3% 0% 3% 0%; width: 100%; }
+.footer-list li img { width: 25px; }
+
+.fish1-box-footer { position: absolute; right: 0; width: 30%; z-index: 10; }
+
+.fish1-footer { width: 100%; }
+
+.fish2-box-footer { position: absolute; left: 0; width: 30%; z-index: 10; }
+
+.fish2-footer { width: 100%; transform: scaleX(-1); }
+
+.index-leaf { position: absolute; background-image: url("/assets/img/BM_leaf_1.png"); background-repeat: no-repeat; height: 200px; width: 159px; margin-top: 0%; right: 15%; }
+
+.index-leaf_4 { position: absolute; background-image: url("/assets/img/BM_leaf_4.png"); background-repeat: no-repeat; height: 200px; width: 300px; margin-top: 5%; right: 5%; }
+
+.index-leaf_5 { position: absolute; background-image: url("/assets/img/BM_leaf_5.png"); background-repeat: no-repeat; height: 200px; width: 300px; margin-top: 2%; left: 5%; }
+
+.item-box { width: 1024px; margin: 2% auto 2% auto; padding: 3% 0% 3% 0%; }
+
+.floral-box { position: absolute; top: 50%; right: 72%; z-index: 10; }
+
+.fish-box { position: absolute; top: 550px; right: 0px; margin: 0; z-index: 8; }
+.fish-box img { width: 100%; }
+
+.text-history h2 { color: #009B41; }
+.text-history h3 { margin: auto; width: 800px; color: #009B41; text-align: center; }
+
+h2 { text-align: center; font-family: "Roboto", sans-serif; text-transform: uppercase; color: white; }
+
+fieldset { width: 50%; margin: auto; border: none; }
+
+input { height: 40px; width: 100%; margin: 1% 1% 1% 1%; border: none; }
+
+.name { display: flex; width: 100%; }
+
+.email { display: flex; width: 100%; }
+
+::placeholder { text-transform: uppercase; font-family: "Roboto", sans-serif; font-weight: 500; text-align: center; font-size: 1.5em; color: #009B41; }
+
+.btn-index { display: flex; justify-content: center; border: 1px solid white; width: 60%; height: 20%; margin: 2% auto 2% auto; }
+.btn-index button { text-align: center; text-transform: uppercase; font-family: "Roboto", sans-serif; font-weight: 500; font-size: 1.5em; background: none; border: none; color: white; }
+
+.gb-container { width: 1024px; margin: auto; padding: 20px 0 100px 0; text-align: center; background: linear-gradient(to bottom, #FCFF00 0%, #78CE00 100%); background-color: #009B41; background-image: url("/assets/img/noise-light.png"); }
+
+.post-list { display: flex; flex-direction: column; align-items: center; text-transform: none; font-weight: unset; font-size: unset; letter-spacing: unset; position: relative; }
+
+.post-list h2 { text-transform: none; }
+
+.post-list li { width: 75%; margin: 10px; background-color: #FF5911; background-image: url("/assets/img/noise-light.png"); }
+
+.gb-img { position: absolute; }
+
+.gb-floral { left: 100px; }
+
+.gb-cloud { right: 0; }
+
+.gb-leaf { right: 75px; top: 1100px; }
+
+.videos-container { box-sizing: border-box; width: 1024px; margin: auto; padding: 20px 0 100px 0; text-align: center; background-color: #78CE00; background-image: url("/assets/img/noise-light.png"); }
+
+.video-iframe { width: 80%; height: 500px; position: relative; z-index: 20; }
+
+.videos-iframes-container { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto; grid-gap: 20px; width: 80%; margin: 40px auto; }
+
+.videos-iframe-box { background-color: #009B41; background-image: url("/assets/img/noise-light.png"); z-index: 20; padding: 10px; }
+
+.videos-iframes { width: 100%; height: 250px; position: relative; }
+
+.video-leaf1-box { width: 25%; position: absolute; left: 50px; top: 1000px; }
+
+.video-leaf2-box { width: 20%; position: absolute; right: 100px; top: 1000px; }
+
+.video-leaf3-box { width: 15%; position: absolute; left: 110px; top: 2000px; }
+
+.video-leaf4-box { width: 17%; position: absolute; top: 1900px; right: 100px; }
+
+.video-leaf1, .video-leaf2, .video-leaf3, .video-leaf4 { width: 100%; }
+
+.video-leaf1 { transform: rotate(70deg); }
+
+.video-leaf3 { transform: rotate(-30deg); }
+
+.video-leaf4 { transform: rotate(90deg); }
+
+.post-container { width: 1024px; margin: auto; padding: 10px 0; text-align: center; background: linear-gradient(to bottom, #FCFF00 0%, #78CE00 100%); background-color: #009B41; background-image: url("/assets/img/noise-light.png"); }
+
+.the-post { margin: 100px; }
+
+.the-post a { color: #FFB300; }
